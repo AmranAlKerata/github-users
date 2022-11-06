@@ -28,7 +28,6 @@ const GithubProvider = ({ children }) => {
     toggleError();
     setLoading(true);
     const resp = await axios(`${rootUrl}/users/${user}`).catch((err) => {
-      console.log(err);
       if (err.message === "Request failed with status code 404") {
         toggleError(true, "There Is No User With That Username");
       } else {
