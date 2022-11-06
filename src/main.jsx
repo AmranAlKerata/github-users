@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Auth0Provider
       domain="dev-7vohz2nv.us.auth0.com"
       clientId="gFzcqvM7aZxnKMXoLSxgwaVwMI74Iltv"
-      redirectUri={window.location.origin}
+      redirectUri={"https://github-users-amk.netlify.app"}
     >
       <GithubProvider>
         <App />
